@@ -80,7 +80,7 @@ fuecoco.addEventListener("click", function () {
           blackBackgroundMenang.style.visibility = "visible";
           playAgainImageMenang.setAttribute("class", "animation-fall");
           backToHomeButtonMenang.setAttribute("class", "animation-fall");
-          play("menang")
+          play("menang");
         }, 1000);
       }
 
@@ -94,7 +94,7 @@ fuecoco.addEventListener("click", function () {
           blackBackgroundKalah.style.visibility = "visible";
           playAgainImageKalah.setAttribute("class", "animation-fall");
           backToHomeButtonKalah.setAttribute("class", "animation-fall");
-          play("kalah")
+          play("kalah");
         }, 1000);
       }
     }, 1000);
@@ -142,7 +142,7 @@ sprigatitto.addEventListener("click", function () {
           blackBackgroundMenang.style.visibility = "visible";
           playAgainImageMenang.setAttribute("class", "animation-fall");
           backToHomeButtonMenang.setAttribute("class", "animation-fall");
-          play("menang")
+          play("menang");
         }, 1000);
       }
 
@@ -156,7 +156,7 @@ sprigatitto.addEventListener("click", function () {
           blackBackgroundKalah.style.visibility = "visible";
           playAgainImageKalah.setAttribute("class", "animation-fall");
           backToHomeButtonKalah.setAttribute("class", "animation-fall");
-          play("kalah")
+          play("kalah");
         }, 1000);
       }
     }, 1000);
@@ -203,7 +203,7 @@ quaxly.addEventListener("click", function () {
           blackBackgroundMenang.style.visibility = "visible";
           playAgainImageMenang.setAttribute("class", "animation-fall");
           backToHomeButtonMenang.setAttribute("class", "animation-fall");
-          play("menang")
+          play("menang");
         }, 1000);
       }
 
@@ -217,7 +217,7 @@ quaxly.addEventListener("click", function () {
           blackBackgroundKalah.style.visibility = "visible";
           playAgainImageKalah.setAttribute("class", "animation-fall");
           backToHomeButtonKalah.setAttribute("class", "animation-fall");
-          play("kalah")
+          play("kalah");
         }, 1000);
       }
     }, 1000);
@@ -277,7 +277,7 @@ nextRound.addEventListener("click", function () {
   if (flagStart === true && flagClick === true) {
     alert("Kamu sedang dalam permainan");
   } else if (flagStart === true) {
-    play("round-berikut")
+    play("round-berikut");
     i = 0;
     flag = false;
     myLoop(i);
@@ -389,7 +389,7 @@ playAgainImageMenang.addEventListener("click", function () {
 
 resetButton.addEventListener("click", function () {
   if (flagStart === true) {
-    play("reset")
+    play("reset");
     i = 0;
     flag = false;
     whiteArena.innerHTML = "";
