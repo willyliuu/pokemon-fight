@@ -220,5 +220,4 @@ const db_home = [
     gambar: './assetPokemon/382.png',
   },
 ];
-
-const backup = [...dbSearch];
+const auth_user = [];

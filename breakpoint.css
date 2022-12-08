@@ -1,0 +1,315 @@
+@media screen and (max-width: 1400px) {
+  .pokemon-home img {
+    width: 100%;
+    margin-top: -4rem;
+    z-index: -1;
+  }
+  .pokemon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .pokemon-1 {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    translate: -50%;
+  }
+  .pokemon-2 {
+    top: 70%;
+    left: 23%;
+  }
+  .pokemon-3 {
+    top: 40%;
+    left: 23%;
+  }
+  .pokemon-4 {
+    top: 55%;
+    left: 15%;
+  }
+  .pokemon-5 {
+    top: 40%;
+    left: 5%;
+  }
+  .pokemon-6 {
+    top: 70%;
+    left: 5%;
+  }
+
+  .pokemon-7 {
+    top: 70%;
+    right: 23%;
+  }
+  .pokemon-8 {
+    top: 40%;
+    right: 23%;
+  }
+  .pokemon-9 {
+    top: 55%;
+    right: 15%;
+  }
+  .pokemon-10 {
+    top: 40%;
+    right: 5%;
+  }
+  .pokemon-11 {
+    top: 70%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pokemon-home img {
+    width: 100%;
+    margin-top: -2rem;
+    z-index: -1;
+  }
+  .pokemon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .pokemon-1 {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 28.5%;
+    left: 50%;
+    translate: -50%;
+  }
+  .pokemon-2 {
+    top: 70%;
+    left: 23%;
+  }
+  .pokemon-3 {
+    top: 40%;
+    left: 23%;
+  }
+  .pokemon-4 {
+    top: 55%;
+    left: 15%;
+  }
+  .pokemon-5 {
+    top: 40%;
+    left: 5%;
+  }
+  .pokemon-6 {
+    top: 70%;
+    left: 5%;
+  }
+
+  .pokemon-7 {
+    top: 70%;
+    right: 23%;
+  }
+  .pokemon-8 {
+    top: 40%;
+    right: 23%;
+  }
+  .pokemon-9 {
+    top: 55%;
+    right: 15%;
+  }
+  .pokemon-10 {
+    top: 40%;
+    right: 5%;
+  }
+  .pokemon-11 {
+    top: 70%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .pokemon-home img {
+    width: 100%;
+    margin-top: 0rem;
+    z-index: -1;
+  }
+  .pokemon {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .pokemon-1 {
+    width: 11rem;
+    height: 11rem;
+    position: absolute;
+    top: 28.5%;
+    left: 50%;
+    translate: -50%;
+  }
+  .pokemon-2 {
+    top: 70%;
+    left: 23%;
+  }
+  .pokemon-3 {
+    top: 40%;
+    left: 23%;
+  }
+  .pokemon-4 {
+    top: 55%;
+    left: 15%;
+  }
+  .pokemon-5 {
+    top: 40%;
+    left: 5%;
+  }
+  .pokemon-6 {
+    top: 70%;
+    left: 5%;
+  }
+
+  .pokemon-7 {
+    top: 70%;
+    right: 23%;
+  }
+  .pokemon-8 {
+    top: 40%;
+    right: 23%;
+  }
+  .pokemon-9 {
+    top: 55%;
+    right: 15%;
+  }
+  .pokemon-10 {
+    top: 40%;
+    right: 5%;
+  }
+  .pokemon-11 {
+    top: 70%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pokemon-home img {
+    width: 100%;
+    margin-top: 2rem;
+    z-index: -1;
+  }
+  .pokemon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .pokemon-1 {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 28.5%;
+    left: 50%;
+    translate: -50%;
+  }
+  .pokemon-2 {
+    top: 70%;
+    left: 23%;
+  }
+  .pokemon-3 {
+    top: 40%;
+    left: 23%;
+  }
+  .pokemon-4 {
+    top: 55%;
+    left: 15%;
+  }
+  .pokemon-5 {
+    top: 40%;
+    left: 5%;
+  }
+  .pokemon-6 {
+    top: 70%;
+    left: 5%;
+  }
+
+  .pokemon-7 {
+    top: 70%;
+    right: 23%;
+  }
+  .pokemon-8 {
+    top: 40%;
+    right: 23%;
+  }
+  .pokemon-9 {
+    top: 55%;
+    right: 15%;
+  }
+  .pokemon-10 {
+    top: 40%;
+    right: 5%;
+  }
+  .pokemon-11 {
+    top: 70%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pokemon-home img {
+    width: 100%;
+    margin-top: 3rem;
+    z-index: -1;
+  }
+  .pokemon {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .pokemon-1 {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    translate: -50%;
+    border: 2px solid saddlebrown;
+  }
+  .pokemon-2 {
+    top: 70%;
+    left: 23%;
+  }
+  .pokemon-3 {
+    top: 40%;
+    left: 23%;
+  }
+  .pokemon-4 {
+    top: 55%;
+    left: 10%;
+  }
+  .pokemon-5 {
+    top: 40%;
+    left: 0%;
+  }
+  .pokemon-6 {
+    top: 70%;
+    left: 0%;
+  }
+
+  .pokemon-7 {
+    top: 70%;
+    right: 23%;
+  }
+  .pokemon-8 {
+    top: 40%;
+    right: 23%;
+  }
+  .pokemon-9 {
+    top: 55%;
+    right: 10%;
+  }
+  .pokemon-10 {
+    top: 40%;
+    right: 0%;
+  }
+  .pokemon-11 {
+    top: 70%;
+    right: 0%;
+  }
+}

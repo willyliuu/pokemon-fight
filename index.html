@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylelogin.css" />
+    <link rel="stylesheet" href="breakpoint.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav__center">
+        <h1>PoKe BoT</h1>
+        <ul>
+          <li><a href="#">HoMe</a></li>
+          <li><a href="#pokeya">SeArcH</a></li>
+          <li><a href="rules" id="rules">RuLes</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <div class="title">
+        <img src="./assets/title.png" alt="" />
+        <h1>PoKe BoT</h1>
+      </div>
+      <!-- Pokemon HOme -->
+      <div class="pokemon-home">
+        <img src="./assets/rotate-bg.png" class="rotate" alt="" />
+      </div>
+
+      <button class="btn-start">Start</button>
+      <!-- Pokedex -->
+
+      <div class="wrap-pokedex" id="#pokeya">
+        <div class="title pokedex-title">
+          <img src="./assets/title.png" alt="" />
+          <h1>PoKe yA</h1>
+        </div>
+        <div class="wrap-search">
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Search Pokemon"
+          />
+        </div>
+        <div class="pokedex-list"></div>
+      </div>
+    </div>
+    <!-- Modal Rules -->
+    <div class="modal-rules">
+      <div class="rules-container">
+        <h2>RULES</h2>
+        <div class="rules-content">
+          <div class="rules">
+            <ol>
+              <li>Anda harus login sebelum bermain.</li>
+              <li>
+                Setelah login, Anda diminta untuk memilih salah satu dari 3
+                pokemon dari Professor Oak! Pokemon yang tersedia yaitu:
+                Sprigatito, Fuecoco, Quaxly
+              </li>
+              <li>
+                Peraturan saat Battle :
+                <ul>
+                  <li>
+                    WIN Jika :
+                    <ol type="a">
+                      <li>Pokemon Api dapat mengalahkan Pokemon Daun</li>
+                      <li>Pokemon Daun dapat mengalahkan Pokemon Air</li>
+                      <li>Pokemon Air dapat mengalahkan Pokemon Api</li>
+                    </ol>
+                    DRAW Jika :
+                    <ol type="a">
+                      <li>Pokemon Api dapat mengalahkan Pokemon Api</li>
+                      <li>Pokemon Daun dapat mengalahkan Pokemon Daun</li>
+                      <li>Pokemon Air dapat mengalahkan Pokemon Air</li>
+                    </ol>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Battle dilakukan selama 3 pertandingan sampai dapat 3 kali WIN,
+                jika terdapat DRAW maka akan diulang pertandingannya
+              </li>
+              <li>
+                Jika dalam 3 pertandingan anda menang maka akan tampil "Selamat
+                Trainer Anda memenangkan Gym Leader Cynthia!" 🏆
+              </li>
+              <li>
+                Jika dalam 3 pertandingan anda kalah maka akan tampil "Anda
+                Kalah Silahkan Coba Lagi" 😭
+              </li>
+            </ol>
+          </div>
+          <img src="./assets/rules.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Auth -->
+    <!--  Sign-up  -->
+    <div class="modal-auth sign-up">
+      <div class="container-auth">
+        <h1 class="auth-title">Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <form id="form-signUp">
+          <label for="email">Name</label> <br />
+          <input
+            type="text"
+            placeholder="Enter name"
+            name="name"
+            id="name"
+            required
+          />
+
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            id="password"
+            required
+          />
+
+          <p>
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+
+          <button type="submit" class="register-btn">Register</button>
+          <div class="exist-acount">
+            <a href="index.html">Sudah memiliki akun?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Login -->
+    <div class="modal-auth">
+      <div class="container-auth">
+        <h1 class="auth-title">Login</h1>
+
+        <form id="form-signUp">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            id="password"
+            required
+          />
+
+          <button type="submit" class="register-btn">Register</button>
+          <div class="exist-acount">
+            <a href="#" id="go-signUp">Belum memiliki akun?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- database -->
+    <script src="db.js"></script>
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
