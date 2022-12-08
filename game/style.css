@@ -324,6 +324,10 @@ body {
   animation: scaleOut 1s ease 0s 1 normal forwards;
 }
 
+.goyang-goyang {
+  animation: goyang 2s ease 0s infinite normal forwards;
+}
+
 @keyframes fallDown {
   0% {
     animation-timing-function: ease-in;
@@ -388,4 +392,32 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+@keyframes goyang {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(0px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(0px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(0px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(0px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(0px) rotate(-1.2deg);
+	}
 }
