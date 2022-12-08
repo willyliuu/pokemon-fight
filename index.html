@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon Battle</title>
+    <link rel="icon" href="../pokemon-fight/AssetPokemon/favicon.ico">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Doppio One'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="rules">
+        <div id="rules-title">
+            <h1>RULES</h1>
+        </div>
+        <div class="rules-content">
+            <table class="rules-table">
+                <tr id="row1">
+                    <td id="num">1. </td>
+                    <td>Anda harus login sebelum bermain.</td>
+                </tr>
+                <tr id="row1">
+                    <td id="num">2. </td>
+                    <td>Setelah login, Anda diminta untuk memilih salah satu dari 3 pokemon dari Professor Oak! Pokemon yang tersedia yaitu: Sprigatito, Fuecoco, Quaxly</td>
+                </tr>
+                <tr id="row2">
+                    <td id="num">3. </td>
+                    <td>Peraturan saat Battle : <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="status">WIN</span>  Jika : <br>
+                        <ul>
+                            <li>Pokemon Api dapat mengalahkan Pokemon Daun</li>
+                            <li>Pokemon Daun dapat mengalahkan Pokemon Air</li>
+                            <li>Pokemon Air  dapat mengalahkan  Pokemon Api</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="status">DRAW</span>  Jika : <br>
+                        <ul>
+                            <li>Pokemon Api  dapat mengalahkan  Pokemon Api</li>
+                            <li>Pokemon Daun dapat mengalahkan  Pokemon Daun</li>
+                            <li>Pokemon Air  dapat mengalahkan  Pokemon Air</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="row3">
+                    <td id="num">4. </td>
+                    <td>Battle dilakukan selama 3 pertandingan sampai dapat 3 kali <span class="status">WIN</span>, jika terdapat <span class="status">DRAW</span> maka akan diulang pertandingannya</td>
+                </tr>
+                <tr id="row3">
+                    <td id="num">5. </td>
+                    <td>
+                        <ul>
+                            <li>Jika dalam 3 pertandingan anda menang maka akan tampil "Selamat Trainer Anda memenangkan Gym Leader Cynthia!" 🏆</li><br>
+                            <li>Jika dalam 3 pertandingan anda kalah maka akan tampil "Anda Kalah Silahkan Coba Lagi" 😭</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <div id="diagram">
+                <img src="../pokemon-fight/AssetPokemon/rules.png" alt="rules" width="300" height="300">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,57 @@
+
+.rules {
+    border: 0.1px solid;
+    border-radius: 40px;
+    background-image: url(../pokemon-fight/AssetPokemon/rules-bg.jpg);
+    background-size: 100%;
+    padding-bottom: 20px;
+    font-family: 'Doppio One';
+}
+
+#rules-title {
+    margin: 40px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rules-content {
+    display: flex; 
+}
+
+.rules-table {
+    background-color: rgba(245, 255, 250, 0.6)
+}
+
+#row1 {
+    height: 60px;
+}
+
+#row2 {
+    height: 40px;
+}
+
+#row3 {
+    height: 90px;
+}
+
+.rules-content table, tr, td {
+    border: 0.1px solid;
+    margin: 0 40px 20px 50px;
+}
+
+#num {
+    width: 5%;
+    text-align: center;
+}
+
+#diagram {
+    border: 0.5px solid;
+    margin: 60px 60px 200px 20px;
+    background-color:rgba(245, 255, 250, 0.6);
+    border-radius: 15%;
+    padding: 10px 20px;
+}
+
+.status{
+    font-weight: bold;
+}
