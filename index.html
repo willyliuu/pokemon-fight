@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="arena">
+      <div class="red-arena">
+        <div>
+          <img id="pokemon-komputer" class="pokemon-in-arena" src="img/fuecoco.png" />
+        </div>
+      </div>
+      <div class="white-circle"></div>
+      <div class="white-arena"></div>
+      <div class="tombol-reset">
+        <img class="reset-image" src="img/masterball.png" />
+      </div>
+      <div class="score-komputer">
+        <div id="score-komputer-1" class="per-score"></div>
+        <div id="score-komputer-2" class="per-score"></div>
+        <div id="score-komputer-3" class="per-score"></div>
+      </div>
+      <div class="score-player">
+        <div id="score-player-1" class="per-score"></div>
+        <div id="score-player-2" class="per-score"></div>
+        <div id="score-player-3" class="per-score"></div>
+      </div>
+    </div>
+    <div class="choose-your-pokemon">
+      <div class="pokemon-image-container">
+        <img id="fuecoco" class="pokemon-image pokemon-api" src="img/fuecoco.png" alt="fuecoco" />
+      </div>
+      <div class="pokemon-image-container">
+        <img id="sprigatitto" class="pokemon-image pokemon-daun" src="img/sprigatitto.png" alt="sprigatitto" />
+      </div>
+      <div class="pokemon-image-container">
+        <img id="quaxly" class="pokemon-image pokemon-air" src="img/quaxly.png" alt="quaxly" />
+      </div>
+    </div>
+    <div>
+      <img src="img/chansey.png" alt="chansey" />
+    </div>
+    <div class="black-background">
+      <div class="white-background">
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
