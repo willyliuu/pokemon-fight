@@ -54,8 +54,8 @@ let scoreKomputer = 0;
 let flagClick = false;
 
 fuecoco.addEventListener("click", function () {
-
   if (flagClick === true) {
+    play("charmander");
     flag = true;
     let pokemonPemain = "fuecoco";
 
@@ -80,6 +80,7 @@ fuecoco.addEventListener("click", function () {
           blackBackgroundMenang.style.visibility = "visible";
           playAgainImageMenang.setAttribute("class", "animation-fall");
           backToHomeButtonMenang.setAttribute("class", "animation-fall");
+          play("menang")
         }, 1000);
       }
 
@@ -93,6 +94,7 @@ fuecoco.addEventListener("click", function () {
           blackBackgroundKalah.style.visibility = "visible";
           playAgainImageKalah.setAttribute("class", "animation-fall");
           backToHomeButtonKalah.setAttribute("class", "animation-fall");
+          play("kalah")
         }, 1000);
       }
     }, 1000);
@@ -115,6 +117,7 @@ fuecoco.addEventListener("click", function () {
 
 sprigatitto.addEventListener("click", function () {
   if (flagClick === true) {
+    play("eevee");
     flag = true;
     let pokemonPemain = "sprigatitto";
 
@@ -139,6 +142,7 @@ sprigatitto.addEventListener("click", function () {
           blackBackgroundMenang.style.visibility = "visible";
           playAgainImageMenang.setAttribute("class", "animation-fall");
           backToHomeButtonMenang.setAttribute("class", "animation-fall");
+          play("menang")
         }, 1000);
       }
 
@@ -152,6 +156,7 @@ sprigatitto.addEventListener("click", function () {
           blackBackgroundKalah.style.visibility = "visible";
           playAgainImageKalah.setAttribute("class", "animation-fall");
           backToHomeButtonKalah.setAttribute("class", "animation-fall");
+          play("kalah")
         }, 1000);
       }
     }, 1000);
@@ -173,6 +178,7 @@ sprigatitto.addEventListener("click", function () {
 
 quaxly.addEventListener("click", function () {
   if (flagClick === true) {
+    play("squirtle");
     flag = true;
     let pokemonPemain = "quaxly";
 
@@ -197,6 +203,7 @@ quaxly.addEventListener("click", function () {
           blackBackgroundMenang.style.visibility = "visible";
           playAgainImageMenang.setAttribute("class", "animation-fall");
           backToHomeButtonMenang.setAttribute("class", "animation-fall");
+          play("menang")
         }, 1000);
       }
 
@@ -210,6 +217,7 @@ quaxly.addEventListener("click", function () {
           blackBackgroundKalah.style.visibility = "visible";
           playAgainImageKalah.setAttribute("class", "animation-fall");
           backToHomeButtonKalah.setAttribute("class", "animation-fall");
+          play("kalah")
         }, 1000);
       }
     }, 1000);
@@ -218,7 +226,6 @@ quaxly.addEventListener("click", function () {
           <img class="pokemon-in-arena scale-in" src="img/quaxly.png" alt="quaxly" />
           </div>`;
 
-    
     quaxly.classList.add("scale-out");
     quaxly.classList.remove("scale-in");
     // quaxly.style.visibility = "hidden";
@@ -257,6 +264,7 @@ let flagStart = false;
 
 playButton.addEventListener("click", function () {
   if (flagStart === false) {
+    play("pikachu");
     myLoop(i);
     flagClick = true;
     flagStart = true;
@@ -269,6 +277,7 @@ nextRound.addEventListener("click", function () {
   if (flagStart === true && flagClick === true) {
     alert("Kamu sedang dalam permainan");
   } else if (flagStart === true) {
+    play("round-berikut")
     i = 0;
     flag = false;
     myLoop(i);
@@ -335,10 +344,10 @@ playAgainImageKalah.addEventListener("click", function () {
   pokemonInArena.classList.remove("scale-in");
   pokemonInArena.classList.remove("scale-out");
 
-  playAgainImageKalah.classList.remove("animation-fall")
-    playAgainImageMenang.classList.remove("animation-fall")
-    backToHomeButtonKalah.classList.remove("animation-fall")
-    backToHomeButtonMenang.classList.remove("animation-fall")
+  playAgainImageKalah.classList.remove("animation-fall");
+  playAgainImageMenang.classList.remove("animation-fall");
+  backToHomeButtonKalah.classList.remove("animation-fall");
+  backToHomeButtonMenang.classList.remove("animation-fall");
 });
 
 playAgainImageMenang.addEventListener("click", function () {
@@ -372,14 +381,15 @@ playAgainImageMenang.addEventListener("click", function () {
   pokemonInArena.classList.remove("scale-in");
   pokemonInArena.classList.remove("scale-out");
 
-  playAgainImageKalah.classList.remove("animation-fall")
-    playAgainImageMenang.classList.remove("animation-fall")
-    backToHomeButtonKalah.classList.remove("animation-fall")
-    backToHomeButtonMenang.classList.remove("animation-fall")
+  playAgainImageKalah.classList.remove("animation-fall");
+  playAgainImageMenang.classList.remove("animation-fall");
+  backToHomeButtonKalah.classList.remove("animation-fall");
+  backToHomeButtonMenang.classList.remove("animation-fall");
 });
 
 resetButton.addEventListener("click", function () {
   if (flagStart === true) {
+    play("reset")
     i = 0;
     flag = false;
     whiteArena.innerHTML = "";
@@ -401,10 +411,10 @@ resetButton.addEventListener("click", function () {
     scorePlayer3.style.backgroundColor = "transparent";
     flagClick = false;
 
-    playAgainImageKalah.classList.remove("animation-fall")
-    playAgainImageMenang.classList.remove("animation-fall")
-    backToHomeButtonKalah.classList.remove("animation-fall")
-    backToHomeButtonMenang.classList.remove("animation-fall")
+    playAgainImageKalah.classList.remove("animation-fall");
+    playAgainImageMenang.classList.remove("animation-fall");
+    backToHomeButtonKalah.classList.remove("animation-fall");
+    backToHomeButtonMenang.classList.remove("animation-fall");
 
     if (fuecoco.classList.contains("scale-out")) {
       fuecoco.classList.add("scale-in");
@@ -438,3 +448,8 @@ resetButton.addEventListener("click", function () {
     alert("Anda belum memulai permainan, klik Start Button untuk memulai");
   }
 });
+
+function play(audio) {
+  const ringtone = document.getElementById(audio);
+  ringtone.play();
+}
