@@ -1,144 +1,159 @@
-const dbSearch = [
+let dbSearch = [
   {
+    dex: '001',
     nama: 'Bulbasur',
-    element: ['Daun', 'Racun'],
-    gambar: './assetPokemon/001.svg',
+    element: ['Grass', 'Poison'],
+    gambar: './assetPokemon/001.png',
   },
   {
+    dex: '002',
     nama: 'Ivysaur',
-    element: ['Daun', 'Racun'],
-    gambar: './assetPokemon/002.svg',
+    element: ['Grass', 'Poison'],
+    gambar: './assetPokemon/002.png',
   },
   {
+    dex: '003',
     nama: 'Venusaur',
-    element: ['Daun', 'Racun'],
-    gambar: './assetPokemon/003.svg',
+    element: ['Grass', 'Poison'],
+    gambar: './assetPokemon/003.png',
   },
   {
+    dex: '004',
     nama: 'Charmender',
     element: ['Fire'],
-    gambar: './assetPokemon/004.svg',
+    gambar: './assetPokemon/004.png',
   },
   {
+    dex: '005',
     nama: 'Charmeleon',
     element: ['Fire'],
-    gambar: './assetPokemon/005.svg',
+    gambar: './assetPokemon/005.png',
   },
   {
+    dex: '006',
     nama: 'Charizard',
     element: ['Fire'],
-    gambar: './assetPokemon/006.svg',
+    gambar: './assetPokemon/006.png',
   },
   {
+    dex: '007',
     nama: 'Squirtel',
     element: ['Water'],
-    gambar: './assetPokemon/007.svg',
+    gambar: './assetPokemon/007.png',
   },
   {
+    dex: '008',
     nama: 'Wartortle',
     element: ['Water'],
-    gambar: './assetPokemon/008.svg',
+    gambar: './assetPokemon/008.png',
   },
   {
+    dex: '009',
     nama: 'Blastoise',
     element: ['Water'],
-    gambar: './assetPokemon/009.svg',
+    gambar: './assetPokemon/009.png',
   },
   {
+    dex: '359',
     nama: 'Mega Absol',
     element: ['Dark'],
-    gambar: './asset/359.svg',
+    gambar: './assetPokemon/359.png',
   },
   {
+    dex: '486',
     nama: 'Regigigas',
     element: ['Normal'],
-    gambar: './asset/489.svg',
+    gambar: './assetPokemon/486.png',
   },
 
   {
+    dex: '471',
     nama: 'Glaceon',
     element: ['Ice'],
-    gambar: './asset/471.svg',
+    gambar: './assetPokemon/471.png',
   },
 
   {
+    dex: '146',
     nama: 'Moltress',
     element: ['Fire'],
-    gambar: './asset/146.svg',
+    gambar: './assetPokemon/146.png',
   },
 
   {
+    dex: '144',
     nama: 'Articuno',
     element: ['Ice'],
-    gambar: './asset/144.svg',
+    gambar: './assetPokemon/144.png',
   },
   {
+    dex: '145',
     nama: 'Zapdos',
     element: ['Electric'],
-    gambar: './asset/145.svg',
+    gambar: './assetPokemon/145.png',
   },
 
   {
+    dex: '249',
     nama: 'Lugia',
     element: ['Flying', 'Pyschic'],
-    gambar: './asset/249.svg',
+    gambar: './assetPokemon/249.png',
   },
 
   {
-    nama: 'Primal Reversion Groundon',
+    dex: '383',
+    nama: 'Groundon',
     element: ['Ground', 'Fire'],
-    gambar: './asset/383.svg',
+    gambar: './assetPokemon/383.png',
   },
 
   {
-    nama: 'Primal Reversion Kyogre',
+    dex: '382',
+    nama: 'Kyogre',
     element: ['Water'],
-    gambar: './asset/382.svg',
+    gambar: './assetPokemon/382.png',
   },
 
   {
+    dex: '150',
     nama: 'Mewtwo X',
-    element: ['Psychic', 'Fighiting'],
-    gambar: './asset/150_x.svg',
+    element: ['Pyschic', 'Fighting'],
+    gambar: './assetPokemon/150_x.png',
   },
 
   {
+    dex: '890',
     nama: 'Eternatus',
     element: ['Poison', 'Dragon'],
-    gambar: './asset/890.svg',
+    gambar: './assetPokemon/890.png',
   },
 
   {
+    dex: '888',
     nama: 'Zacian',
     element: ['Fairy', 'Steel'],
-    gambar: './asset/888.svg',
+    gambar: './assetPokemon/888.png',
   },
 
   {
+    dex: '889',
     nama: 'Zamazenta',
     element: ['Steel'],
-    gambar: './asset/889.svg',
+    gambar: './assetPokemon/889.png',
   },
 
   {
+    dex: '647',
     nama: 'Resolute  Form',
     element: ['Water', 'Fighting'],
-    gambar: './asset/647.svg',
+    gambar: './assetPokemon/647.png',
   },
+
   {
-    nama: 'Quaxly',
-    element: ['Water'],
-    gambar: './asset/quaxly.png',
-  },
-  {
-    nama: 'Fuecoco',
-    element: ['fire'],
-    gambar: './asset/fuecoco.png',
-  },
-  {
+    dex: '986',
     nama: 'Sprigatito',
-    element: ['grass'],
-    gambar: './asset/sprigatito.png',
+    element: ['Grass'],
+    gambar: './assetPokemon/sprigatito.png',
   },
 ];
 
@@ -146,80 +161,64 @@ const db_home = [
   {
     nama: 'Resolute  Form',
     element: ['Water', 'Fighting'],
-    gambar: './asset/647.svg',
+    gambar: './assetPokemon/647.png',
   },
   {
     nama: 'Mega Absol',
     element: ['Dark'],
-    gambar: './asset/359.svg',
+    gambar: './assetPokemon/359.png',
   },
   {
-    nama: 'Regigigas',
-    element: ['Normal'],
-    gambar: './asset/489.svg',
+    nama: 'Eternatus',
+    element: ['Dragon', 'Poison'],
+    gambar: './assetPokemon/890.png',
   },
 
   {
     nama: 'Glaceon',
     element: ['Ice'],
-    gambar: './asset/471.svg',
+    gambar: './assetPokemon/471.png',
   },
 
   {
     nama: 'Moltress',
     element: ['Fire'],
-    gambar: './asset/146.svg',
+    gambar: './assetPokemon/146.png',
   },
   {
     nama: 'Articuno',
     element: ['Ice'],
-    gambar: './asset/144.svg',
+    gambar: './assetPokemon/144.png',
   },
   {
     nama: 'Mewtwo X',
-    element: ['Psychic', 'Fighiting'],
-    gambar: './asset/150_x.svg',
+    element: ['Pyschic', 'Fighting'],
+    gambar: './assetPokemon/150_x.png',
   },
 
   {
     nama: 'Zapdos',
     element: ['Electric'],
-    gambar: './asset/145.svg',
+    gambar: './assetPokemon/145.png',
   },
 
   {
     nama: 'Lugia',
     element: ['Flying', 'Pyschic'],
-    gambar: './asset/249.svg',
+    gambar: './assetPokemon/249.png',
   },
 
   {
     nama: 'Primal Reversion Groundon',
     element: ['Ground', 'Fire'],
-    gambar: './asset/383.svg',
+    gambar: './assetPokemon/383.png',
   },
 
   {
     nama: 'Primal Reversion Kyogre',
     element: ['Water'],
-    gambar: './asset/382.svg',
-  },
-
-  {
-    nama: 'Eternatus',
-    element: ['Poison', 'Dragon'],
-    gambar: './asset/890.svg',
-  },
-
-  {
-    nama: 'Zacian',
-    element: ['Fairy', 'Steel'],
-    gambar: './asset/888.svg',
-  },
-
-  {
-    nama: 'Zamazenta',
-    element: ['Steel'],
-    gambar: './asset/889.svg',
+    gambar: './assetPokemon/382.png',
   },
 ];
+
+const backup = [...dbSearch];
