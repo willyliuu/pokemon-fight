@@ -20,8 +20,19 @@
       </div>
       <div class="white-circle"></div>
       <div class="white-arena"></div>
-      <div class="tombol-reset">
-        <img class="reset-image" src="img/masterball.png" />
+      <div class="tombol-container">
+        <div class="reset-button-container">
+          <img class="reset-button" src="img/Dream_Quick_Ball_Sprite.png">
+          <label class="reset-text">Reset Button</label>
+        </div>
+        <div class="play-button-container">
+          <img class="play-button" src="img/safariball.png">
+          <label class="play-text">Start Button</label>
+        </div>
+        <div class="next-round-container">
+          <img class="next-round" src="img/masterball.png" />
+          <label class="next-round-text">Next Round Button</label>
+        </div>
       </div>
       <div class="score-komputer">
         <div id="score-komputer-1" class="per-score"></div>
@@ -45,14 +56,51 @@
         <img id="quaxly" class="pokemon-image pokemon-air" src="img/quaxly.png" alt="quaxly" />
       </div>
     </div>
-    <div>
-      <img src="img/chansey.png" alt="chansey" />
-    </div>
-    <div class="black-background">
+    <div class="black-background-menang">
       <div class="white-background">
-        
+        <img class="image-selesai-running" width="150px"  src="img/running.gif" alt="">
+        <img class="image-selesai-selamat1" width="150px"  src="img/selamat.gif" alt="">
+        <img class="image-selesai-selamat2" width="150px"  src="img/selamat.gif" alt="">
+        <img class="image-selesai-selamat3" width="150px"  src="img/selamat.gif" alt="">
+        <img class="image-selesai-selamat4" width="150px"  src="img/selamat.gif" alt="">
+        <div class="play-again-container">
+          <img width="25px" src="img/Dream_Great_Ball_Sprite.png" class="play-again-image-menang" >
+          <div class="play-again-text">Play Again</div>
+        </div>
+        <div class="back-to-home-container">
+          <img width="25px" src="img/ultraball.png" class="back-to-home-button-menang">
+          <div class="back-to-home-text">Back to Home</div>
+        </div>
+        <div class="congratulation-text">
+          <h1 style="text-align: center;">congratulations</h1>
+          <p style="text-align: center;">Selamat anda telah mengalahkan gym leader Cynthia!</p>
+        </div>
       </div>
     </div>
+
+    <div class="black-background-kalah">
+      <div class="white-background">
+        <img class="image-selesai-running" width="150px"  src="img/tidak.gif" alt="">
+        <img class="image-selesai-selamat1" width="150px"  src="img/sedih.gif" alt="">
+        <img class="image-selesai-selamat2" width="150px"  src="img/sedih.gif" alt="">
+        <img class="image-selesai-selamat3" width="150px"  src="img/sedih.gif" alt="">
+        <img class="image-selesai-selamat4" width="150px"  src="img/sedih.gif" alt="">
+        <div class="play-again-container">
+          <img width="25px" src="img/Dream_Great_Ball_Sprite.png" class="play-again-image-kalah">
+          <div class="play-again-text">Play Again</div>
+        </div>
+        <div class="back-to-home-container">
+          <img width="25px" src="img/ultraball.png" class="back-to-home-button-kalah">
+          <div class="back-to-home-text">Back to Home</div>
+        </div>
+        <div class="lose-text">
+          <h1 style="text-align: center;">Anda Kalah</h1>
+          <p style="text-align: center;">Silahkan coba lagi ya ges ya :(</p>
+        </div>
+      </div>
+    </div>
+    <!-- <embed src="/song/lagu.mp3" loop="true" autostart="true" width="2" height="0"> -->
+      
     <script src="script.js"></script>
   </body>
 </html>
