@@ -119,19 +119,46 @@ body {
   box-sizing: border-box;
 }
 
-.tombol-reset {
+.tombol-container {
   position: absolute;
-  bottom: 0px;
-  right: -70px;
+  bottom: 10px;
+  right: -220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.reset-image {
+.next-round-container,
+.play-button-container,
+.reset-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-round,
+.play-button,
+.reset-button {
   width: 40px;
   height: 40px;
 }
 
-.reset-image:hover {
+.next-round:hover,
+.play-button:hover,
+.reset-button {
   cursor: pointer;
+}
+
+.next-round-text,
+.play-text,
+.reset-text {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 .score-komputer {
@@ -168,22 +195,197 @@ body {
   justify-content: space-evenly;
 }
 
-.black-background {
+.black-background-menang {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+}
+
+.black-background-kalah {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
 }
 
 .white-background {
   width: 50%;
   height: 70%;
-  background-color: white;
+  background-image: url(img/background-hasil.webp);
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
+  position: relative;
+}
 
+.image-selesai-running {
+  position: absolute;
+  bottom: 100px;
+  right: 250px;
+}
+
+.image-selesai-selamat1 {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+
+.image-selesai-selamat2 {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+}
+
+.image-selesai-selamat3 {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+.image-selesai-selamat4 {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.play-again-container {
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.play-again-text {
+  margin-top: 5px;
+}
+
+.animation-fall {
+  animation: fallDown 2s ease 0s 1 normal forwards;
+}
+
+.animation-fall:hover {
+  cursor: pointer;
+}
+
+.play-again-image-kalah:hover,
+.play-again-image-menang:hover {
+  cursor: pointer;
+}
+
+.back-to-home-container {
+  position: absolute;
+  bottom: 0px;
+  right: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.back-to-home-text {
+  margin-top: 5px;
+}
+
+.congratulation-text,
+.lose-text {
+  position: absolute;
+  top: 50px;
+  left: 135px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scale-in {
+  animation: scaleIn 1s ease 0s 1 normal forwards;
+}
+
+.scale-out {
+  animation: scaleOut 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fallDown {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes scaleOut {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
