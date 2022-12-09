@@ -20,49 +20,6 @@ searchFav.addEventListener('input', (e) => {
   displayCharacters(filteredSearch);
 });
 
-/*
-function renderSearch() {
-  pokedexList.innerHTML = '';
-  dbSearch.map((item, i) => {
-    const mainDiv = document.createElement('div');
-    mainDiv.setAttribute('class', 'pokedex');
-    mainDiv.addEventListener('click', (e) => {
-      dbSearch.splice(i, 1);
-      renderSearch();
-    });
-
-    // Image
-    const imgPoke = document.createElement('img');
-    imgPoke.setAttribute('src', `${item.gambar}`);
-    mainDiv.appendChild(imgPoke);
-    // Name
-    const divName = document.createElement('div');
-    divName.setAttribute('class', 'pokedex-name');
-    const dex = document.createElement('p');
-    dex.innerText = `${item.dex}`;
-    divName.appendChild(dex);
-    const name = document.createElement('h2');
-    name.innerText = `${item.nama}`;
-    divName.appendChild(name);
-    mainDiv.appendChild(divName);
-
-    // Element
-    const divElement = document.createElement('div');
-    divElement.setAttribute('class', 'pokedex-element');
-    item.element.map((el, i) => {
-      const pElement = document.createElement('p');
-      pElement.setAttribute('class', el);
-      pElement.innerText = el;
-      divElement.appendChild(pElement);
-    });
-    mainDiv.appendChild(divElement);
-
-    pokedexList.appendChild(mainDiv);
-  });
-}
-renderSearch();
-*/
-
 const displayCharacters = (characters) => {
   const htmlString = characters
     .map((characters) => {
@@ -97,22 +54,16 @@ modalRules.addEventListener('click', (e) => {
   }
 });
 // >>>>Auth
-let flagCount = 0;
-if (authVal.length > 0) {
-  flagCount = 1;
-}
-function authVal() {
-  const modalAuth = document.querySelectorAll('.modal-auth')[flagCount];
-  document.querySelector('.btn-start').addEventListener('click', (e) => {
-    modalAuth.classList.add('modal-auth-active');
-  });
-  modalAuth.addEventListener('click', (e) => {
-    if (e.target.className.includes('modal-auth')) {
-      modalAuth.classList.remove('modal-auth-active');
-    }
-  });
-}
-authVal();
+
+const modalAuth = document.querySelector('.modal-auth');
+document.querySelector('.btn-start').addEventListener('click', (e) => {
+  modalAuth.classList.add('modal-auth-active');
+});
+modalAuth.addEventListener('click', (e) => {
+  if (e.target.className.includes('modal-auth')) {
+    modalAuth.classList.remove('modal-auth-active');
+  }
+});
 
 // Navbar
 const navEl = document.querySelector('.nav__center');
@@ -124,4 +75,10 @@ window.addEventListener('scroll', (e) => {
   } else {
     navEl.classList.remove('nav__center-effect');
   }
+});
+
+const el = document.querySelector('.modal-sign-up');
+document.getElementById('go-signUp').addEventListener('click', (e) => {
+  modalAuth.classList.remove('modal-auth-active');
+  el.classList.add('modal-sign-up-active');
 });
